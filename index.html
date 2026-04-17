@@ -1,11 +1,20 @@
 <head>
   <style>
-    /* Tam ekran veya geniş bir alan için CSS */
-    model-viewer {
-      width: 100%;
-      height: 600px; 
-      margin: 0 auto;
-    }
+/* Sayfa kenarlarındaki varsayılan boşlukları kaldırır */
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Sayfanın sağında kaydırma çubuğu çıkmasını engeller */
+  }
+
+  /* Model görüntüleyiciyi tüm ekranı kaplayacak şekilde ayarlar */
+  model-viewer {
+    width: 100%;
+    height: 100vh; /* 'vh' birimi ekran yüksekliğinin %100'ü demektir */
+    display: block;
+  }
   </style>
 </head>
 
